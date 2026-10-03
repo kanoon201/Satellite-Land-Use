@@ -1,0 +1,20 @@
+# data is large and re-creatable; keep only the folder structure
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# python / jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
