@@ -18,3 +18,6 @@ __pycache__/
 .idea/
 Thumbs.db
 desktop.ini
+
+# course handout: keep locally, not in the repo
+*.pdf
