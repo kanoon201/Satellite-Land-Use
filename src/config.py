@@ -48,3 +48,52 @@ WORLDCOVER_TO_TARGET = {
     50: "built-up",   # Built-up
     80: "water",      # Permanent water bodies
 }
+
+# ---- Thai study areas -------------------------------------------------------
+# All three areas lie in UTM zone 47N, the native grid of their Sentinel-2 tiles.
+THAI_CRS = "EPSG:32647"
+PIXEL_SIZE = 10          # metres
+AOI_SIZE_PX = 3072       # 48 x 48 patches of 64 px = 30.72 km per side
+
+# name -> (lon, lat) of the area centre
+AOIS = {
+    "bangkok": (100.55, 13.80),      # dense city, river, suburbs
+    "suphanburi": (100.12, 14.47),   # irrigated rice plain
+    "nan": (100.78, 18.78),          # forested mountains, upland crops
+}
+
+# Dry season of 2021: fewest clouds, and the same year as WorldCover v200.
+S2_START = "2021-01-01"
+S2_END = "2021-03-01"
+
+S2_COLLECTIONS = {
+    "L2A": "COPERNICUS/S2_SR_HARMONIZED",  # surface reflectance, no B10
+    "L1C": "COPERNICUS/S2_HARMONIZED",     # top-of-atmosphere, same level as EuroSAT
+}
+BANDS_L1C = ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B9", "B10", "B11", "B12"]
+
+# Cloud Score+ "cs_cdf" runs from 0 (cloud or shadow) to 1 (clear); keep pixels at or above this.
+CLOUD_SCORE_COLLECTION = "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED"
+CLEAR_THRESHOLD = 0.60
+
+WORLDCOVER_COLLECTION = "ESA/WorldCover/v200"
+
+# code -> (name, official map colour)
+WORLDCOVER_CLASSES = {
+    10: ("Tree cover", "#006400"),
+    20: ("Shrubland", "#ffbb22"),
+    30: ("Grassland", "#ffff4c"),
+    40: ("Cropland", "#f096ff"),
+    50: ("Built-up", "#fa0000"),
+    60: ("Bare / sparse vegetation", "#b4b4b4"),
+    70: ("Snow and ice", "#f0f0f0"),
+    80: ("Permanent water bodies", "#0064c8"),
+    90: ("Herbaceous wetland", "#0096a0"),
+    95: ("Mangroves", "#00cf75"),
+    100: ("Moss and lichen", "#fae6a0"),
+}
+
+
+def thai_path(area, product):
+    """Path of one downloaded file, e.g. thai_path("nan", "S2_L2A.tif")."""
+    return THAILAND_DIR / area / f"{area}_{product}"

@@ -9,5 +9,6 @@ matplotlib
 seaborn
 tifffile
 tqdm
+pyproj
 jupyter
 ipykernel

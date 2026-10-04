@@ -35,3 +35,23 @@ pip install -r requirements.txt
 
 On Google Colab, place the project at `MyDrive/DataMining_Project_AT`; `src/config.py`
 detects Colab and switches paths automatically.
+
+## Getting the Thai data
+
+```bash
+python src/download_thailand.py    # Sentinel-2 composites and WorldCover labels
+python src/check_thailand.py       # checks the files, writes outputs/thailand_quicklook.png
+```
+
+Three 30.72 km square areas (Bangkok, Suphan Buri, Nan), dry season 2021, on a
+shared 10 m grid. Each area gets a 12-band L2A composite, a 13-band L1C composite,
+the WorldCover label map and a count of cloud-free observations per pixel
+(about 1.1 GB in total, saved under `data/thailand/<area>/`).
+
+Clouds are masked with Cloud Score+ (pixels scoring below 0.60 are dropped), the
+20 m and 60 m bands are resampled to 10 m, and the remaining observations are
+combined with a per-pixel median. Areas, dates and thresholds are set in
+`src/config.py`. The download needs an Earth Engine account with access to the
+Cloud project named there.
+
+![Quick look at the three areas](outputs/thailand_quicklook.png)
