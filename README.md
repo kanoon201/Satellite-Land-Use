@@ -6,6 +6,9 @@ Classify Thai land use (forest, crop, grassland, built-up, water) from Sentinel-
 imagery using models trained on European data (EuroSAT), and measure the domain
 shift between the two regions.
 
+> **Before working with the data, read [DATA_NOTES.md](DATA_NOTES.md)** (in Thai): class imbalance,
+> single-area classes and other limits of the Thai test set that affect how results must be reported.
+
 ## Data sources
 
 | Source | Role | Labels |

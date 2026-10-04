@@ -50,7 +50,7 @@ WORLDCOVER_TO_TARGET = {
 }
 
 # ---- Thai study areas -------------------------------------------------------
-# All three areas lie in UTM zone 47N, the native grid of their Sentinel-2 tiles.
+# All areas lie in UTM zone 47N, the native grid of their Sentinel-2 tiles.
 THAI_CRS = "EPSG:32647"
 PIXEL_SIZE = 10          # metres
 AOI_SIZE_PX = 3072       # 48 x 48 patches of 64 px = 30.72 km per side
@@ -60,6 +60,7 @@ AOIS = {
     "bangkok": (100.55, 13.80),      # dense city, river, suburbs
     "suphanburi": (100.12, 14.47),   # irrigated rice plain
     "nan": (100.78, 18.78),          # forested mountains, upland crops
+    "kanchanaburi": (99.04, 14.57),  # Srinagarind reservoir and surrounding forest
 }
 
 # Dry season of 2021: fewest clouds, and the same year as WorldCover v200.
@@ -97,3 +98,19 @@ WORLDCOVER_CLASSES = {
 def thai_path(area, product):
     """Path of one downloaded file, e.g. thai_path("nan", "S2_L2A.tif")."""
     return THAILAND_DIR / area / f"{area}_{product}"
+
+
+# ---- EuroSAT training set ---------------------------------------------------
+EUROSAT_ZIP = EUROSAT_DIR / "EuroSAT_MS.zip"
+EUROSAT_CLASSES = sorted(EUROSAT_TO_TARGET)   # the 10 original class names
+SPLIT_FRACTIONS = {"train": 0.70, "val": 0.15, "test": 0.15}
+SEED = 42
+
+
+# ---- Thai test patches ------------------------------------------------------
+# A patch is "pure" when at least this share of its WorldCover pixels is one target class.
+PURITY_THRESHOLD = 0.90
+
+# Only 0.04% of Thailand is pure WorldCover grassland at patch scale, so the Thai
+# evaluation covers the other four classes; the model still predicts all five.
+THAI_EVAL_CLASSES = ["forest", "crop", "built-up", "water"]
