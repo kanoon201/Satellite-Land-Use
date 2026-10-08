@@ -1,0 +1,7 @@
+,EuroSAT,EuroSAT,EuroSAT,EuroSAT,Thailand,Thailand,"Thailand, usable, by area","Thailand, usable, by area","Thailand, usable, by area","Thailand, usable, by area"
+,train,validation,test,all,all patches (majority class),usable (pure),bangkok,suphanburi,nan,kanchanaburi
+forest,2100,450,450,3000,3953,1776,5,0,683,1088
+crop,3850,825,825,5500,2370,535,0,521,13,1
+grassland,3500,750,750,5000,133,0,0,0,0,0
+built-up,5600,1200,1200,8000,2112,281,280,1,0,0
+water,3850,825,825,5500,648,431,0,0,0,431
