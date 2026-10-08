@@ -1,0 +1,63 @@
+labellers: Flukeee, Kanoon, Win
+patches with at least one answer: 200; answered by all 3: 200
+
+== What every labeller answered (number of patches) ==
+                                        Flukeee  Kanoon  Win
+manual_label                                                
+forest                                       49      44   48
+crop                                         51      55   52
+grassland                                     0       0    0
+built-up                                     50      50   50
+water                                        50      50   50
+unsure                                        0       1    0
+answers with WorldCover shown (peeked)        6       6    0
+
+== Agreement between labellers ==
+                  patches same answer  Cohen kappa
+pair                                              
+Flukeee - Kanoon      200       96.5%        0.953
+Flukeee - Win         200       97.5%        0.967
+Kanoon - Win          200       97.5%        0.967
+Fleiss kappa over the 200 patches everybody answered: 0.962
+(kappa: 1 = perfect, 0 = no better than chance; above 0.6 is usually called good, above 0.8 very good)
+
+== Consensus ==
+status
+unanimous    192
+majority       7
+split          1
+undecided      0
+199 of 200 patches have a consensus label (99.5%); they form the clean test set
+
+consensus label by WorldCover label (patches with a consensus):
+consensus   forest  crop  grassland  built-up  water
+worldcover                                          
+built-up         0     0          0        50      0
+crop             1    49          0         0      0
+forest          46     3          0         0      0
+water            0     0          0         0     50
+
+== How often does the human answer equal the WorldCover label? ==
+      who               answers  patches equal to WorldCover
+  Flukeee           all answers      200               98.5%
+  Flukeee    blind answers only      194               99.0%
+   Kanoon           all answers      199               97.5%
+   Kanoon    blind answers only      193               97.9%
+      Win           all answers      200               98.0%
+      Win    blind answers only      200               98.0%
+consensus all consensus patches      199               98.0%
+consensus         nobody peeked      189               99.5%
+
+consensus equal to WorldCover, by WorldCover class (nobody peeked):
+         patches   equal
+built-up      50  100.0%
+crop          47   97.9%
+forest        43  100.0%
+water         49  100.0%
+
+forest, by area (nobody peeked):
+             patches   equal
+kanchanaburi      23  100.0%
+nan               20  100.0%
+
+These 200 patches are pure WorldCover patches, so this is the agreement in the easy case. Mixed patches are not in the sample.

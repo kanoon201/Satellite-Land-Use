@@ -1,0 +1,131 @@
+product,group,feature,W1_over_sd,cohen_d,median_diff
+Thai L1C,forest,B1,2.333,2.591,238.0
+Thai L1C,forest,B2,2.909,2.846,233.0
+Thai L1C,forest,B3,2.097,2.161,220.0
+Thai L1C,forest,B4,3.739,2.194,276.0
+Thai L1C,forest,B5,1.142,1.202,246.0
+Thai L1C,forest,B6,0.616,-0.73,-294.0
+Thai L1C,forest,B7,0.692,-0.853,-480.0
+Thai L1C,forest,B8,0.633,-0.761,-482.0
+Thai L1C,forest,B8A,0.625,-0.741,-485.0
+Thai L1C,forest,B9,0.764,-1.034,-214.0
+Thai L1C,forest,B11,1.132,1.069,334.0
+Thai L1C,forest,B12,1.729,1.243,222.0
+Thai L1C,forest,NDVI,2.606,-2.189,-0.213
+Thai L1C,crop,B1,0.828,0.958,147.0
+Thai L1C,crop,B2,0.446,0.209,45.0
+Thai L1C,crop,B3,0.502,-0.323,-92.0
+Thai L1C,crop,B4,0.605,-0.667,-427.0
+Thai L1C,crop,B5,0.759,-0.908,-481.0
+Thai L1C,crop,B6,0.659,-0.818,-283.0
+Thai L1C,crop,B7,0.405,-0.462,-245.0
+Thai L1C,crop,B8,0.492,-0.569,-283.0
+Thai L1C,crop,B8A,0.465,-0.53,-273.0
+Thai L1C,crop,B9,1.118,-1.547,-291.0
+Thai L1C,crop,B11,0.758,-0.79,-881.0
+Thai L1C,crop,B12,0.769,-0.84,-818.0
+Thai L1C,crop,NDVI,0.357,0.271,0.143
+Thai L1C,built-up,B1,1.509,1.964,416.0
+Thai L1C,built-up,B2,1.021,1.197,407.0
+Thai L1C,built-up,B3,0.773,0.859,342.0
+Thai L1C,built-up,B4,0.622,0.651,370.0
+Thai L1C,built-up,B5,0.442,0.26,150.0
+Thai L1C,built-up,B6,0.726,-0.883,-357.0
+Thai L1C,built-up,B7,0.777,-0.967,-479.0
+Thai L1C,built-up,B8,0.726,-0.895,-520.0
+Thai L1C,built-up,B8A,0.771,-0.966,-531.0
+Thai L1C,built-up,B9,1.326,-1.859,-302.0
+Thai L1C,built-up,B11,0.373,0.277,251.0
+Thai L1C,built-up,B12,0.658,0.721,446.0
+Thai L1C,built-up,NDVI,1.058,-1.364,-0.25
+Thai L1C,water,B1,0.991,1.021,171.0
+Thai L1C,water,B2,0.841,0.575,135.0
+Thai L1C,water,B3,0.76,0.298,97.0
+Thai L1C,water,B4,0.683,-0.146,46.0
+Thai L1C,water,B5,0.837,-0.721,-194.0
+Thai L1C,water,B6,0.738,-0.836,-65.0
+Thai L1C,water,B7,0.722,-0.854,-77.0
+Thai L1C,water,B8,0.696,-0.847,-46.0
+Thai L1C,water,B8A,0.706,-0.855,-39.0
+Thai L1C,water,B9,0.692,-0.865,-13.0
+Thai L1C,water,B11,0.681,-0.856,-15.0
+Thai L1C,water,B12,0.632,-0.799,-19.0
+Thai L1C,water,NDVI,0.755,-0.829,-0.07
+Thai L1C,balanced mix,B1,0.94,0.982,185.0
+Thai L1C,balanced mix,B2,0.6,0.637,163.0
+Thai L1C,balanced mix,B3,0.391,0.365,116.0
+Thai L1C,balanced mix,B4,0.279,0.115,89.0
+Thai L1C,balanced mix,B5,0.258,-0.154,20.0
+Thai L1C,balanced mix,B6,0.497,-0.508,-357.0
+Thai L1C,balanced mix,B7,0.481,-0.488,-480.0
+Thai L1C,balanced mix,B8,0.485,-0.506,-514.0
+Thai L1C,balanced mix,B8A,0.467,-0.474,-551.0
+Thai L1C,balanced mix,B9,0.786,-0.987,-286.0
+Thai L1C,balanced mix,B11,0.198,-0.156,46.0
+Thai L1C,balanced mix,B12,0.129,-0.075,16.0
+Thai L1C,balanced mix,NDVI,0.486,-0.468,-0.217
+Thai L2A,forest,B1,7.963,-7.79,-803.0
+Thai L2A,forest,B2,5.268,-4.002,-448.0
+Thai L2A,forest,B3,1.08,-0.823,-119.0
+Thai L2A,forest,B4,1.519,0.641,56.0
+Thai L2A,forest,B5,1.246,1.153,250.0
+Thai L2A,forest,B6,0.348,-0.154,-107.0
+Thai L2A,forest,B7,0.445,-0.407,-304.0
+Thai L2A,forest,B8,0.32,-0.103,-159.0
+Thai L2A,forest,B8A,0.464,-0.378,-336.0
+Thai L2A,forest,B9,5.33,5.27,2011.0
+Thai L2A,forest,B11,1.955,1.91,587.0
+Thai L2A,forest,B12,3.249,2.1,443.0
+Thai L2A,forest,NDVI,0.71,-0.502,-0.038
+Thai L2A,crop,B1,4.574,-5.26,-888.0
+Thai L2A,crop,B2,2.166,-2.406,-633.0
+Thai L2A,crop,B3,1.051,-1.237,-406.0
+Thai L2A,crop,B4,0.802,-0.896,-658.0
+Thai L2A,crop,B5,0.612,-0.67,-471.0
+Thai L2A,crop,B6,0.277,-0.313,-48.0
+Thai L2A,crop,B7,0.19,-0.2,-77.0
+Thai L2A,crop,B8,0.14,-0.048,70.0
+Thai L2A,crop,B8A,0.34,-0.363,-156.0
+Thai L2A,crop,B9,6.735,4.598,2299.0
+Thai L2A,crop,B11,0.46,-0.423,-669.0
+Thai L2A,crop,B12,0.407,-0.327,-590.0
+Thai L2A,crop,NDVI,0.783,0.765,0.29
+Thai L2A,built-up,B1,1.764,-2.038,-434.0
+Thai L2A,built-up,B2,0.22,-0.223,-92.0
+Thai L2A,built-up,B3,0.353,0.349,151.0
+Thai L2A,built-up,B4,0.459,0.483,291.0
+Thai L2A,built-up,B5,0.512,0.549,265.0
+Thai L2A,built-up,B6,0.524,-0.595,-272.0
+Thai L2A,built-up,B7,0.71,-0.853,-456.0
+Thai L2A,built-up,B8,0.511,-0.591,-384.0
+Thai L2A,built-up,B8A,0.747,-0.915,-531.0
+Thai L2A,built-up,B9,5.091,4.752,1351.0
+Thai L2A,built-up,B11,0.659,0.717,518.5
+Thai L2A,built-up,B12,1.469,1.467,914.0
+Thai L2A,built-up,NDVI,0.779,-0.939,-0.195
+Thai L2A,water,B1,4.771,-6.519,-832.0
+Thai L2A,water,B2,2.651,-3.638,-520.0
+Thai L2A,water,B3,1.001,-1.34,-246.0
+Thai L2A,water,B4,0.854,-1.138,-199.0
+Thai L2A,water,B5,0.982,-1.291,-372.0
+Thai L2A,water,B6,0.802,-1.113,-248.0
+Thai L2A,water,B7,0.77,-1.065,-251.0
+Thai L2A,water,B8,0.727,-1.003,-180.0
+Thai L2A,water,B8A,0.73,-1.008,-181.0
+Thai L2A,water,B9,0.612,-0.551,39.0
+Thai L2A,water,B11,0.682,-0.885,-37.0
+Thai L2A,water,B12,0.625,-0.78,-19.0
+Thai L2A,water,NDVI,0.722,-0.703,-0.029
+Thai L2A,balanced mix,B1,3.144,-2.773,-833.0
+Thai L2A,balanced mix,B2,1.311,-1.195,-515.0
+Thai L2A,balanced mix,B3,0.396,-0.397,-218.0
+Thai L2A,balanced mix,B4,0.18,-0.188,-141.0
+Thai L2A,balanced mix,B5,0.174,-0.113,22.0
+Thai L2A,balanced mix,B6,0.358,-0.354,-225.0
+Thai L2A,balanced mix,B7,0.399,-0.397,-391.0
+Thai L2A,balanced mix,B8,0.3,-0.294,-288.0
+Thai L2A,balanced mix,B8A,0.409,-0.414,-469.0
+Thai L2A,balanced mix,B9,3.499,1.501,1620.0
+Thai L2A,balanced mix,B11,0.218,0.045,274.0
+Thai L2A,balanced mix,B12,0.34,0.243,238.0
+Thai L2A,balanced mix,NDVI,0.253,-0.181,-0.147
