@@ -1,7 +1,7 @@
 """Check the downloaded Thai rasters and draw a quick-look figure.
 
 Prints, for every area: grid alignment, missing pixels, band means, cloud-free
-observation counts and the WorldCover class shares. Saves outputs/thailand_quicklook.png.
+observation counts and the WorldCover class shares. Saves outputs/data_prep/thailand_quicklook.png.
 
 Usage:  python src/check_thailand.py
 """
@@ -74,7 +74,7 @@ def main():
     present = [Patch(color=c.WORLDCOVER_CLASSES[k][1], label=c.WORLDCOVER_CLASSES[k][0]) for k in codes]
     fig.legend(handles=present, loc="lower center", ncol=6, frameon=False)
     fig.tight_layout(rect=(0, 0.04, 1, 1))
-    out = c.OUTPUT_DIR / "thailand_quicklook.png"
+    out = c.OUTPUT_DIR / "data_prep" / "thailand_quicklook.png"
     fig.savefig(out, dpi=110)
     print(f"\nsaved {out}")
 

@@ -18,8 +18,8 @@ shift between the two regions. Train in Europe, test in Thailand.
 | EuroSAT prepared (12 bands, 5 classes, train / validation / test split) | done |
 | A1: Thai test patches labelled by eye by three people, merged by vote | done: clean test set of 199 patches |
 | A2 to A5: exploration of the data (band histograms, NDVI, domain shift, counts, spectral signatures) | done |
-| Models (Random Forest, ResNet), normalisation experiments, evaluation | **not in the repo yet** |
-| A6, A7: compare model predictions with the labels, analyse the errors | waiting for the predictions of the models |
+| B1–B6, B8–B9: Random Forest, ResNet-18, L2A, Thai normalisation, AdaBN, grassland removed, evaluation | done (seed 42, one run): table in `outputs/b/b9_table.md` |
+| A6, A7: compare model predictions with the labels, analyse the errors | predictions ready in `outputs/predictions/` |
 | Slides, report, video | not started |
 
 ## Data sources
@@ -34,11 +34,17 @@ shift between the two regions. Train in Europe, test in Thailand.
 ## Layout
 
 ```
-src/            scripts (see "Running the pipeline"); config.py holds paths, bands, class mappings
-notebooks/      label_thai_ui (labelling), a2 to a5 (exploration), open_thailand_data, eurosat_samples
-outputs/        figures and tables: a1/ to a5/, manual_labels/ (answers of the labellers)
-slides_report/  presentation and report
-data/           NOT in git: eurosat/, thailand/, patches/
+README.md, DATA_NOTES.md   start here; DATA_NOTES.md (Thai) holds the rules for reporting results
+src/                       scripts (see "Running the pipeline"); config.py holds paths, bands, class mappings
+notebooks/                 label_thai_ui (labelling), a2 to a5 (exploration), open_thailand_data, eurosat_samples
+outputs/
+  data_prep/               figures from steps 1-2 (EuroSAT samples, Thai quick look, Thai patch samples)
+  manual_labels/           answers of the labellers (A1)
+  a1/ ... a5/              results of each Part A step
+  b/                       Part B: b9_table.md, b9_results.csv, per_class.csv, confusion/ (matrices), training/ (logs)
+  predictions/             one CSV per model and test set (handoff to A6 / A7)
+slides_report/             presentation and report
+data/                      NOT in git: eurosat/, thailand/, patches/, features/ and models/ (Part B caches)
 ```
 
 ## Setup
@@ -46,7 +52,8 @@ data/           NOT in git: eurosat/, thailand/, patches/
 ```bash
 conda create -n landuse python=3.12 -y
 conda activate landuse
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128   # NVIDIA GPU
+# pip install torch torchvision                                                  # Mac (MPS) or CPU only
 pip install -r requirements.txt
 ```
 
@@ -76,7 +83,7 @@ python src/prepare_eurosat.py
 
 ```bash
 python src/download_thailand.py    # Sentinel-2 composites and WorldCover labels
-python src/check_thailand.py       # checks the files, writes outputs/thailand_quicklook.png
+python src/check_thailand.py       # checks the files, writes outputs/data_prep/thailand_quicklook.png
 python src/make_thai_patches.py    # cuts 64 x 64 patches and labels them from WorldCover
 ```
 
@@ -91,7 +98,7 @@ bands are resampled to 10 m, and the remaining observations are combined with a 
 median. Every Thai patch gets the class that covers most of it; a patch is *pure* (usable) when
 at least 90% of it is one class and it has no missing pixels. 3,023 of the 9,216 patches are pure.
 
-![Quick look at the four areas](outputs/thailand_quicklook.png)
+![Quick look at the four areas](outputs/data_prep/thailand_quicklook.png)
 
 ### What the data files contain
 
@@ -117,6 +124,11 @@ Read `thailand_patches.csv` with `keep_default_na=False`: otherwise the area nam
 | `src/make_label_reference.py` | reference example figures for the labellers |
 | `src/label_tool.py` | the labelling interface (started from `notebooks/label_thai_ui.ipynb`) |
 | `src/merge_labels.py` | votes over the labellers' answers; writes `outputs/a1/` |
+| `src/b_data.py` | Part B: shared loading of EuroSAT and Thai arrays, prediction-file format |
+| `src/train_rf.py` | B1: Random Forest on band statistics and indices; writes `outputs/predictions/predictions_rf_*.csv` and `outputs/b/` |
+| `src/train_resnet.py` | B2: ResNet-18 (ImageNet start) on 12 bands, or `--bands rgb`; `--seed n` repeats the training with another seed; checkpoint in `data/models/`, training log in `outputs/b/` |
+| `src/predict.py` | B3–B6: one checkpoint → EuroSAT test, Thai L1C, Thai L2A (and with B9 fixed), Thai normalisation and AdaBN (statistics from the non-pure Thai patches only); writes `outputs/predictions/` |
+| `src/evaluate.py` | B8–B9: scores every prediction file (EuroSAT test; Thai against WorldCover, against the 199-patch vote, and the same 199 against WorldCover); writes `outputs/b/b9_table.md` (seed 42), `b9_seeds.md` (mean ± SD over seeds), `b9_results.csv`, `per_class.csv`, `confusion/` |
 
 ## Labelling the Thai test set (A1)
 
@@ -179,6 +191,12 @@ Full version in [DATA_NOTES.md](DATA_NOTES.md). In short:
 
 ## Next
 
-1. Train the models on the EuroSAT training patches and predict the Thai patches (L1C as the main set, L2A as a comparison).
-2. Save each model's predictions in a CSV so that A6 and A7 can read them. A format that would work (proposed, not agreed yet): one file per model and test set, columns `patch_id`, `predicted_label` (class name as in `config.CLASSES`).
-3. A6: compare the predictions with the WorldCover labels and the clean test set. Compute the scores three ways from the same predictions: (a) 3,023 pure patches against WorldCover, (b) the 199 clean patches against the vote, (c) the same 199 patches against WorldCover. (b) against (c) shows the effect of the labels, (c) against (a) the effect of choosing the patches. Compare macro-F1 and per-class scores, not accuracy alone. A7: look at the errors with example images.
+1. Done: models trained on EuroSAT, Thai L1C / L2A predicted (`src/train_rf.py`, `train_resnet.py`, `predict.py`).
+2. Done: predictions in `outputs/predictions/predictions_<model>_<run>.csv`, one row per patch, columns
+   `patch_id, predicted_label, confidence, p_forest, p_crop, p_grassland, p_built-up, p_water`
+   (Thai files cover all 9,216 patches; filter on `pure`). Runs ending in `_nograss` have grassland removed.
+3. Done for the scores (`src/evaluate.py`): the three scorings (a) 3,023 pure patches against WorldCover, (b) the 199 clean
+   patches against the vote, (c) the same 199 against WorldCover are in `outputs/b/b9_results.csv`.
+   Still open for A6 / A7: interpret (b) against (c) (effect of the labels) and (c) against (a) (effect of the sample),
+   and look at the errors with example images.
+4. Open for Part B: the RGB ResNet (`--bands rgb`), B7 fine-tuning.

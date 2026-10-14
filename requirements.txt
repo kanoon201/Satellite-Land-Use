@@ -1,14 +1,16 @@
-# torch / torchvision: install separately with the CUDA build
-#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+numpy
 rasterio
 earthengine-api
 geemap
 scikit-learn
+joblib
 pandas
 matplotlib
 seaborn
 tifffile
 tqdm
 pyproj
+timm
 jupyter
 ipykernel
+ipywidgets

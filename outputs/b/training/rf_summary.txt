@@ -1,0 +1,18 @@
+B1 Random Forest, seed 42, 300 trees, class_weight=balanced
+
+validation split (EuroSAT, 5 classes)
+  {'min_samples_leaf': 1, 'max_features': 'sqrt'}: accuracy 0.9365, macro-F1 0.9421
+  {'min_samples_leaf': 3, 'max_features': 'sqrt'}: accuracy 0.9331, macro-F1 0.9386
+  {'min_samples_leaf': 1, 'max_features': 0.3}: accuracy 0.9390, macro-F1 0.9443
+  {'min_samples_leaf': 3, 'max_features': 0.3}: accuracy 0.9356, macro-F1 0.9409
+chosen: {'min_samples_leaf': 1, 'max_features': 0.3}
+
+EuroSAT test (5 classes): accuracy 0.9442, macro-F1 0.9491
+
+Thai pure patches against WorldCover (4 eval classes; first look, see evaluate.py)
+  thai-L1C             accuracy 0.6050, macro-F1 0.7068, predicted grassland 4.4% of 3023
+  thai-L1C_nograss     accuracy 0.6103, macro-F1 0.6998, predicted grassland 0.0% of 3023
+  thai-L2A             accuracy 0.3506, macro-F1 0.4666, predicted grassland 64.3% of 3023
+  thai-L2A_nograss     accuracy 0.8303, macro-F1 0.7671, predicted grassland 0.0% of 3023
+
+top 10 features: B2_std, B11_p10, B8_p10, B8A_p10, B4_p90, B4_std, B3_p90, B9_p10, B7_p10, B12_p10

@@ -3,12 +3,14 @@ data/**
 !data/**/
 !data/**/.gitkeep
 
-# model checkpoints
+# model checkpoints (kept in data/models/)
 *.pt
+*.joblib
 *.pth
 *.ckpt
 
 # python / jupyter
+.venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
@@ -21,3 +23,8 @@ desktop.ini
 
 # course handout: keep locally, not in the repo
 *.pdf
+.DS_Store
+
+# personal, local only
+CLAUDE.local.md
+PART_B_PLAN.md
