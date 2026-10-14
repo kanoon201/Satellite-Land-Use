@@ -1,0 +1,16 @@
+resnet18_12band_seed1: checkpoint epoch 18, val macro-F1 0.9914, seed 1, device mps
+
+eurosat-test (5 classes): accuracy 0.9911, macro-F1 0.9912
+
+Thai pure patches against WorldCover (4 eval classes; first look, see evaluate.py)
+  (B6a statistics from 6193 non-pure L1C patches)
+  thai-L1C                   accuracy 0.6355, macro-F1 0.7991, predicted grassland 30.1%
+  thai-L1C_nograss           accuracy 0.8048, macro-F1 0.8184, predicted grassland 0.0%
+  thai-L2A                   accuracy 0.3930, macro-F1 0.4295, predicted grassland 57.9%
+  thai-L2A_nograss           accuracy 0.8558, macro-F1 0.8343, predicted grassland 0.0%
+  thai-L2A_b9mean            accuracy 0.2193, macro-F1 0.4747, predicted grassland 77.2%
+  thai-L2A_b9mean_nograss    accuracy 0.6196, macro-F1 0.7272, predicted grassland 0.0%
+  thai-L1C_thainorm          accuracy 0.7579, macro-F1 0.8017, predicted grassland 18.0%
+  thai-L1C_thainorm_nograss  accuracy 0.8918, macro-F1 0.8330, predicted grassland 0.0%
+  thai-L1C_adabn             accuracy 0.8475, macro-F1 0.9215, predicted grassland 12.8%
+  thai-L1C_adabn_nograss     accuracy 0.9534, macro-F1 0.9421, predicted grassland 0.0%

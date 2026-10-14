@@ -92,7 +92,7 @@ def save_samples_figure(x, y, y10):
         ax.set_yticks([])
     fig.suptitle("EuroSAT: 10 original classes and the target class each one maps to")
     fig.tight_layout(h_pad=2.5)
-    fig.savefig(c.OUTPUT_DIR / "eurosat_samples.png", dpi=110)
+    fig.savefig(c.OUTPUT_DIR / "data_prep" / "eurosat_samples.png", dpi=110)
 
 
 def main():
@@ -141,7 +141,7 @@ def main():
     (c.EUROSAT_DIR / "eurosat_meta.json").write_text(json.dumps(meta, indent=2))
     save_samples_figure(x, y, y10)
     print("saved arrays to", c.EUROSAT_DIR)
-    print("saved figure to", c.OUTPUT_DIR / "eurosat_samples.png")
+    print("saved figure to", c.OUTPUT_DIR / "data_prep" / "eurosat_samples.png")
 
 
 if __name__ == "__main__":

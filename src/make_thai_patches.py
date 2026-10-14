@@ -97,7 +97,7 @@ def save_samples_figure(x, table, per_class=8):
         axes[r, 0].set_ylabel(f"{name}\n({len(ids)} pure)", fontsize=11)
     fig.suptitle(f"Thai patches labelled by WorldCover (purity >= {c.PURITY_THRESHOLD:.0%}), true colour")
     fig.tight_layout()
-    fig.savefig(c.OUTPUT_DIR / "thailand_patch_samples.png", dpi=110)
+    fig.savefig(c.OUTPUT_DIR / "data_prep" / "thailand_patch_samples.png", dpi=110)
 
 
 def main():
@@ -135,7 +135,7 @@ def main():
 
     save_samples_figure(x_l2a, table)
     print("\nsaved arrays and table to", c.PATCH_DIR)
-    print("saved figure to", c.OUTPUT_DIR / "thailand_patch_samples.png")
+    print("saved figure to", c.OUTPUT_DIR / "data_prep" / "thailand_patch_samples.png")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,429 @@
+model,seed,train_data,test_data,fix,run,scoring,class,precision,recall,f1,support
+resnet18_12band,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,forest,0.989,0.9978,0.9934,450
+resnet18_12band,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,crop,0.9867,0.9891,0.9879,825
+resnet18_12band,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,grassland,0.9906,0.98,0.9853,750
+resnet18_12band,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,built-up,0.9933,0.9958,0.9946,1200
+resnet18_12band,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,water,0.9964,0.9952,0.9958,825
+resnet18_12band,1,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,forest,0.9934,0.9978,0.9956,450
+resnet18_12band,1,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,crop,0.9902,0.983,0.9866,825
+resnet18_12band,1,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,grassland,0.984,0.9853,0.9847,750
+resnet18_12band,1,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,built-up,0.9917,0.995,0.9933,1200
+resnet18_12band,1,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,water,0.9964,0.9952,0.9958,825
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,worldcover,forest,1.0,0.5051,0.6712,1776
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,worldcover,crop,0.7376,0.5832,0.6514,535
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,worldcover,built-up,0.7849,1.0,0.8795,281
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,worldcover,water,0.9885,1.0,0.9942,431
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,forest,1.0,0.4043,0.5758,47
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,crop,0.963,0.5,0.6582,52
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,built-up,0.8333,1.0,0.9091,50
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,water,0.9804,1.0,0.9901,50
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,forest,1.0,0.3878,0.5588,49
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,crop,0.9259,0.5,0.6494,50
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,built-up,0.8333,1.0,0.9091,50
+resnet18_12band,1,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,water,0.9804,1.0,0.9901,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,forest,0.9904,0.8091,0.8906,1776
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,crop,0.9768,0.7869,0.8716,535
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,built-up,0.9647,0.9715,0.9681,281
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,water,0.9151,1.0,0.9557,431
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,forest,0.9091,0.6383,0.75,47
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,crop,0.9762,0.7885,0.8723,52
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,built-up,0.9796,0.96,0.9697,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,water,0.9091,1.0,0.9524,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,forest,0.9697,0.6531,0.7805,49
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,crop,0.9762,0.82,0.8913,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,built-up,0.9796,0.96,0.9697,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,water,0.9091,1.0,0.9524,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,forest,0.9862,0.9651,0.9755,1776
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,crop,0.8838,0.8673,0.8755,535
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,built-up,0.9647,0.9715,0.9681,281
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,water,0.9036,1.0,0.9493,431
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,forest,0.9167,0.9362,0.9263,47
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,crop,0.9565,0.8462,0.898,52
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,built-up,0.9796,0.96,0.9697,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,water,0.8929,1.0,0.9434,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,forest,0.9792,0.9592,0.9691,49
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,crop,0.9565,0.88,0.9167,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,built-up,0.9796,0.96,0.9697,50
+resnet18_12band,1,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,water,0.8929,1.0,0.9434,50
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,forest,1.0,0.719,0.8366,1776
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,crop,0.4868,0.8299,0.6137,535
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,built-up,0.7318,1.0,0.8451,281
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,water,0.9578,1.0,0.9784,431
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,forest,1.0,0.6809,0.8101,47
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,crop,0.7547,0.7692,0.7619,52
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,built-up,0.8065,1.0,0.8929,50
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,water,0.9615,1.0,0.9804,50
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,forest,1.0,0.6531,0.7901,49
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,crop,0.717,0.76,0.7379,50
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,built-up,0.8065,1.0,0.8929,50
+resnet18_12band,1,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,water,0.9615,1.0,0.9804,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,forest,0.9993,0.7624,0.8649,1776
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,crop,1.0,0.4299,0.6013,535
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,built-up,0.6509,0.9822,0.783,281
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,water,0.919,1.0,0.9578,431
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,forest,1.0,0.6596,0.7949,47
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,crop,1.0,0.4808,0.6494,52
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,built-up,0.8197,1.0,0.9009,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,water,0.9434,1.0,0.9709,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,forest,1.0,0.6327,0.775,49
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,crop,1.0,0.5,0.6667,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,built-up,0.8197,1.0,0.9009,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,water,0.9434,1.0,0.9709,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,forest,0.9994,0.9364,0.9669,1776
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,crop,0.8647,0.6093,0.7149,535
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,built-up,0.5598,0.9822,0.7132,281
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,water,0.8814,1.0,0.937,431
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,forest,0.9773,0.9149,0.9451,47
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,crop,0.9429,0.6346,0.7586,52
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,built-up,0.7692,1.0,0.8696,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,water,0.9091,1.0,0.9524,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,forest,1.0,0.898,0.9462,49
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,crop,0.9429,0.66,0.7765,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,built-up,0.7692,1.0,0.8696,50
+resnet18_12band,1,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,water,0.9091,1.0,0.9524,50
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,worldcover,forest,0.8984,0.4082,0.5614,1776
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,worldcover,crop,0.95,0.0355,0.0685,535
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,worldcover,built-up,0.9286,0.0463,0.0881,281
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,worldcover,water,1.0,1.0,1.0,431
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,forest,0.8,0.3404,0.4776,47
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,crop,1.0,0.0385,0.0741,52
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,built-up,1.0,0.06,0.1132,50
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,forest,0.8,0.3265,0.4638,49
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,crop,1.0,0.04,0.0769,50
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,built-up,1.0,0.06,0.1132,50
+resnet18_12band,1,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,forest,1.0,0.0023,0.0045,1776
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,crop,0.9746,0.215,0.3522,535
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,built-up,0.837,0.4021,0.5433,281
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,water,0.9977,1.0,0.9988,431
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,forest,0.0,0.0,0.0,47
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,crop,1.0,0.1923,0.3226,52
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,built-up,0.875,0.42,0.5676,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,forest,0.0,0.0,0.0,49
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,crop,1.0,0.2,0.3333,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,built-up,0.875,0.42,0.5676,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,forest,0.9843,0.3891,0.5577,1776
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,crop,0.3045,0.8804,0.4524,535
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,built-up,0.826,0.9964,0.9032,281
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,water,0.9908,1.0,0.9954,431
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,forest,0.9286,0.2766,0.4262,47
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,crop,0.5641,0.8462,0.6769,52
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,built-up,0.8772,1.0,0.9346,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,forest,0.9286,0.2653,0.4127,49
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,crop,0.5385,0.84,0.6562,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,built-up,0.8772,1.0,0.9346,50
+resnet18_12band,1,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,forest,0.8323,0.9499,0.8872,1776
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,crop,0.6871,0.357,0.4699,535
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,built-up,0.9754,0.9893,0.9823,281
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,water,0.9954,1.0,0.9977,431
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,forest,0.6056,0.9149,0.7288,47
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,crop,0.8462,0.4231,0.5641,52
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,built-up,0.9615,1.0,0.9804,50
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,forest,0.6197,0.898,0.7333,49
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,crop,0.8077,0.42,0.5526,50
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,built-up,0.9615,1.0,0.9804,50
+resnet18_12band,1,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,2,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,forest,0.9978,0.9978,0.9978,450
+resnet18_12band,2,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,crop,0.9903,0.9855,0.9878,825
+resnet18_12band,2,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,grassland,0.9815,0.9907,0.9861,750
+resnet18_12band,2,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,built-up,0.995,0.995,0.995,1200
+resnet18_12band,2,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,water,0.9988,0.9952,0.997,825
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,worldcover,forest,0.999,0.5816,0.7352,1776
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,worldcover,crop,0.8737,0.6075,0.7166,535
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,worldcover,built-up,0.8917,0.9964,0.9412,281
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,worldcover,water,0.9621,1.0,0.9807,431
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,forest,1.0,0.4468,0.6176,47
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,crop,0.9355,0.5577,0.6988,52
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,built-up,0.8929,1.0,0.9434,50
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,water,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,forest,1.0,0.4286,0.6,49
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,crop,0.9355,0.58,0.716,50
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,built-up,0.8929,1.0,0.9434,50
+resnet18_12band,2,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,water,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,forest,0.9873,0.7416,0.8469,1776
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,crop,0.9978,0.8467,0.9161,535
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,built-up,0.9821,0.9786,0.9804,281
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,water,0.917,1.0,0.9567,431
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,forest,0.9667,0.617,0.7532,47
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,crop,0.9762,0.7885,0.8723,52
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,water,0.9434,1.0,0.9709,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,forest,1.0,0.6122,0.7595,49
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,crop,1.0,0.84,0.913,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,water,0.9434,1.0,0.9709,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,forest,0.9872,0.9966,0.9919,1776
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,crop,0.9937,0.8841,0.9357,535
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,built-up,0.9821,0.9786,0.9804,281
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,water,0.9093,1.0,0.9525,431
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,forest,0.92,0.9787,0.9485,47
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,crop,0.9778,0.8462,0.9072,52
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,water,0.9434,1.0,0.9709,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,forest,0.98,1.0,0.9899,49
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,crop,1.0,0.9,0.9474,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,water,0.9434,1.0,0.9709,50
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,forest,0.998,0.8311,0.9069,1776
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,crop,0.6263,0.8897,0.7351,535
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,built-up,0.8615,0.9964,0.9241,281
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,water,0.939,1.0,0.9685,431
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,forest,0.9744,0.8085,0.8837,47
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,crop,0.84,0.8077,0.8235,52
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,built-up,0.8621,1.0,0.9259,50
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,water,0.9615,1.0,0.9804,50
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,forest,1.0,0.7959,0.8864,49
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,crop,0.84,0.84,0.84,50
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,built-up,0.8621,1.0,0.9259,50
+resnet18_12band,2,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,water,0.9615,1.0,0.9804,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,forest,0.9991,0.6357,0.777,1776
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,crop,0.9967,0.572,0.7268,535
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,built-up,0.7583,0.9715,0.8518,281
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,water,0.8887,1.0,0.941,431
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,forest,1.0,0.4468,0.6176,47
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,crop,1.0,0.5577,0.716,52
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,built-up,0.8333,1.0,0.9091,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,water,0.9091,1.0,0.9524,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,forest,1.0,0.4286,0.6,49
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,crop,1.0,0.58,0.7342,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,built-up,0.8333,1.0,0.9091,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,water,0.9091,1.0,0.9524,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,forest,0.9988,0.9116,0.9532,1776
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,crop,0.8697,0.7607,0.8116,535
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,built-up,0.6247,0.9715,0.7604,281
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,water,0.8672,1.0,0.9289,431
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,forest,1.0,0.8723,0.9318,47
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,crop,0.9474,0.6923,0.8,52
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,built-up,0.7812,1.0,0.8772,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,water,0.8929,1.0,0.9434,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,forest,1.0,0.8367,0.9111,49
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,crop,0.9474,0.72,0.8182,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,built-up,0.7812,1.0,0.8772,50
+resnet18_12band,2,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,water,0.8929,1.0,0.9434,50
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,worldcover,forest,0.7427,0.0715,0.1305,1776
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,worldcover,crop,0.973,0.2019,0.3344,535
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,worldcover,built-up,0.8571,0.1068,0.1899,281
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,worldcover,water,0.9954,1.0,0.9977,431
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,forest,0.4444,0.0851,0.1429,47
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,crop,1.0,0.1731,0.2951,52
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,built-up,0.8,0.08,0.1455,50
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,forest,0.4444,0.0816,0.1379,49
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,crop,1.0,0.18,0.3051,50
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,built-up,0.8,0.08,0.1455,50
+resnet18_12band,2,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,forest,1.0,0.0011,0.0022,1776
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,crop,0.3103,0.8243,0.4509,535
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,built-up,0.9647,0.5836,0.7273,281
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,water,1.0,1.0,1.0,431
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,forest,0.0,0.0,0.0,47
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,crop,0.5733,0.8269,0.6772,52
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,built-up,0.96,0.48,0.64,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,forest,0.0,0.0,0.0,49
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,crop,0.56,0.84,0.672,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,built-up,0.96,0.48,0.64,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,forest,0.9972,0.1982,0.3307,1776
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,crop,0.2706,0.9869,0.4248,535
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,built-up,0.9757,1.0,0.9877,281
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,water,1.0,1.0,1.0,431
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,forest,1.0,0.1489,0.2593,47
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,crop,0.5604,0.9808,0.7133,52
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,forest,1.0,0.1429,0.25,49
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,crop,0.5385,0.98,0.695,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,forest,0.8599,0.9122,0.8852,1776
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,crop,0.5937,0.4561,0.5159,535
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,built-up,0.9072,0.9395,0.9231,281
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,water,0.9863,1.0,0.9931,431
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,forest,0.6379,0.7872,0.7048,47
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,crop,0.7105,0.5192,0.6,52
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,built-up,0.9423,0.98,0.9608,50
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,water,0.9804,1.0,0.9901,50
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,forest,0.6552,0.7755,0.7103,49
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,crop,0.6842,0.52,0.5909,50
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,built-up,0.9423,0.98,0.9608,50
+resnet18_12band,2,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,water,0.9804,1.0,0.9901,50
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,forest,0.9991,0.5985,0.7486,1776
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,crop,0.7933,0.6673,0.7249,535
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,built-up,0.8646,1.0,0.9274,281
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,water,0.9931,1.0,0.9965,431
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,forest,1.0,0.4681,0.6377,47
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,crop,0.9429,0.6346,0.7586,52
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,built-up,0.8621,1.0,0.9259,50
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,forest,1.0,0.449,0.6197,49
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,crop,0.9143,0.64,0.7529,50
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,built-up,0.8621,1.0,0.9259,50
+resnet18_12band,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,forest,0.9754,0.7134,0.8241,1776
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,crop,0.9761,0.7626,0.8562,535
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,built-up,0.9477,0.968,0.9577,281
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,worldcover,water,0.9055,1.0,0.9504,431
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,forest,0.9643,0.5745,0.72,47
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,crop,0.9487,0.7115,0.8132,52
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-vote,water,0.9434,1.0,0.9709,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,forest,0.9643,0.551,0.7013,49
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,crop,0.9744,0.76,0.8539,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,built-up,0.9804,1.0,0.9901,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN,thai-L1C_adabn,clean-wc,water,0.9434,1.0,0.9709,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,forest,0.9779,0.9448,0.9611,1776
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,crop,0.8519,0.8598,0.8558,535
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,built-up,0.9379,0.968,0.9527,281
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,worldcover,water,0.9036,1.0,0.9493,431
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,forest,0.8958,0.9149,0.9053,47
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,crop,0.9348,0.8269,0.8776,52
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,built-up,0.9615,1.0,0.9804,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-vote,water,0.9434,1.0,0.9709,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,forest,0.9583,0.9388,0.9485,49
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,crop,0.9565,0.88,0.9167,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,built-up,0.9615,1.0,0.9804,50
+resnet18_12band,42,EuroSAT,thai-L1C,AdaBN + grassland removed,thai-L1C_adabn_nograss,clean-wc,water,0.9434,1.0,0.9709,50
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,forest,0.9987,0.8401,0.9125,1776
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,crop,0.6349,0.8841,0.7391,535
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,built-up,0.8145,1.0,0.8978,281
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,water,0.9818,1.0,0.9908,431
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,forest,0.9737,0.7872,0.8706,47
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,crop,0.82,0.7885,0.8039,52
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,built-up,0.8197,1.0,0.9009,50
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,forest,1.0,0.7755,0.8736,49
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,crop,0.8,0.8,0.8,50
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,built-up,0.8197,1.0,0.9009,50
+resnet18_12band,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,forest,1.0,0.7252,0.8407,1776
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,crop,0.9935,0.5682,0.7229,535
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,built-up,0.7647,0.9715,0.8558,281
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,worldcover,water,0.919,1.0,0.9578,431
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,forest,1.0,0.5319,0.6944,47
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,crop,1.0,0.5,0.6667,52
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,built-up,0.8475,1.0,0.9174,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-vote,water,0.9259,1.0,0.9615,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,forest,1.0,0.5102,0.6757,49
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,crop,1.0,0.52,0.6842,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,built-up,0.8475,1.0,0.9174,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation,thai-L1C_thainorm,clean-wc,water,0.9259,1.0,0.9615,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,forest,0.9988,0.9718,0.9852,1776
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,crop,0.9517,0.7738,0.8536,535
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,built-up,0.7222,0.9715,0.8285,281
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,worldcover,water,0.8942,1.0,0.9441,431
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,forest,0.9773,0.9149,0.9451,47
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,crop,0.9487,0.7115,0.8132,52
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,built-up,0.8197,1.0,0.9009,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-vote,water,0.9091,1.0,0.9524,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,forest,1.0,0.898,0.9462,49
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,crop,0.9487,0.74,0.8315,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,built-up,0.8197,1.0,0.9009,50
+resnet18_12band,42,EuroSAT,thai-L1C,Thai normalisation + grassland removed,thai-L1C_thainorm_nograss,clean-wc,water,0.9091,1.0,0.9524,50
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,forest,1.0,0.1014,0.184,1776
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,crop,0.4649,0.0991,0.1633,535
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,built-up,0.8333,0.0178,0.0348,281
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,water,0.9931,0.9977,0.9954,431
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,forest,1.0,0.1064,0.1923,47
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,crop,0.7273,0.1538,0.254,52
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,built-up,1.0,0.02,0.0392,50
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,forest,1.0,0.102,0.1852,49
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,crop,0.7273,0.16,0.2623,50
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,built-up,1.0,0.02,0.0392,50
+resnet18_12band,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,forest,1.0,0.0096,0.019,1776
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,crop,0.3998,0.6262,0.488,535
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,built-up,0.76,0.3381,0.468,281
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,worldcover,water,1.0,0.9977,0.9988,431
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,forest,0.0,0.0,0.0,47
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,crop,0.7391,0.6538,0.6939,52
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,built-up,0.6471,0.22,0.3284,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,forest,0.0,0.0,0.0,49
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,crop,0.7391,0.68,0.7083,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,built-up,0.6471,0.22,0.3284,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean,thai-L2A_b9mean,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,forest,1.0,0.0377,0.0727,1776
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,crop,0.2267,0.9308,0.3646,535
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,built-up,0.8589,0.9964,0.9226,281
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,worldcover,water,0.9954,1.0,0.9977,431
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,forest,1.0,0.0426,0.0816,47
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,crop,0.5111,0.8846,0.6479,52
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,built-up,0.8772,1.0,0.9346,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,forest,1.0,0.0408,0.0784,49
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,crop,0.4889,0.88,0.6286,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,built-up,0.8772,1.0,0.9346,50
+resnet18_12band,42,EuroSAT,thai-L2A,B9 set to EuroSAT mean + grassland removed,thai-L2A_b9mean_nograss,clean-wc,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,forest,0.8534,0.5901,0.6977,1776
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,crop,0.3312,0.6673,0.4427,535
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,built-up,0.9462,0.8754,0.9094,281
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,water,0.9431,1.0,0.9707,431
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,forest,0.561,0.4894,0.5227,47
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,crop,0.6066,0.7115,0.6549,52
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,built-up,0.9574,0.9,0.9278,50
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,water,1.0,1.0,1.0,50
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,forest,0.561,0.4694,0.5111,49
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,crop,0.5738,0.7,0.6306,50
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,built-up,0.9574,0.9,0.9278,50
+resnet18_12band,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,water,1.0,1.0,1.0,50
+rf,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,forest,0.9867,0.9889,0.9878,450
+rf,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,crop,0.9084,0.9261,0.9172,825
+rf,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,grassland,0.9117,0.9493,0.9301,750
+rf,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,built-up,0.9506,0.9133,0.9316,1200
+rf,42,EuroSAT,eurosat-test,—,eurosat-test,eurosat-test,water,0.9794,0.9782,0.9788,825
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,forest,0.9985,0.3744,0.5446,1776
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,crop,0.3275,0.8449,0.4721,535
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,built-up,0.7025,1.0,0.8253,281
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,worldcover,water,0.9707,1.0,0.9851,431
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,forest,1.0,0.3191,0.4839,47
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,crop,0.6,0.8654,0.7087,52
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,built-up,0.8772,1.0,0.9346,50
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-vote,water,1.0,1.0,1.0,50
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,forest,1.0,0.3061,0.4688,49
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,crop,0.5733,0.86,0.688,50
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,built-up,0.8772,1.0,0.9346,50
+rf,42,EuroSAT,thai-L1C,—,thai-L1C,clean-wc,water,1.0,1.0,1.0,50
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,forest,0.9985,0.3829,0.5535,1776
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,crop,0.3046,0.8467,0.4481,535
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,built-up,0.6887,1.0,0.8157,281
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,worldcover,water,0.9642,1.0,0.9818,431
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,forest,1.0,0.3191,0.4839,47
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,crop,0.5844,0.8654,0.6977,52
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,built-up,0.8772,1.0,0.9346,50
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-vote,water,1.0,1.0,1.0,50
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,forest,1.0,0.3061,0.4688,49
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,crop,0.5584,0.86,0.6772,50
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,built-up,0.8772,1.0,0.9346,50
+rf,42,EuroSAT,thai-L1C,grassland removed,thai-L1C_nograss,clean-wc,water,1.0,1.0,1.0,50
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,forest,0.9809,0.2889,0.4463,1776
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,crop,0.9786,0.2561,0.4059,535
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,built-up,0.5833,0.0249,0.0478,281
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,worldcover,water,1.0,0.935,0.9664,431
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,forest,0.9333,0.2979,0.4516,47
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,crop,1.0,0.3462,0.5143,52
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,built-up,1.0,0.02,0.0392,50
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-vote,water,1.0,0.92,0.9583,50
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,forest,0.9333,0.2857,0.4375,49
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,crop,1.0,0.36,0.5294,50
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,built-up,1.0,0.02,0.0392,50
+rf,42,EuroSAT,thai-L2A,—,thai-L2A,clean-wc,water,1.0,0.92,0.9583,50
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,forest,0.8762,0.9167,0.896,1776
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,crop,0.8638,0.3794,0.5273,535
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,built-up,0.5243,0.9609,0.6784,281
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,worldcover,water,0.9855,0.949,0.9669,431
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,forest,0.6557,0.8511,0.7407,47
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,crop,0.9231,0.4615,0.6154,52
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,built-up,0.7424,0.98,0.8448,50
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-vote,water,1.0,0.92,0.9583,50
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,forest,0.6721,0.8367,0.7455,49
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,crop,0.9231,0.48,0.6316,50
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,built-up,0.7424,0.98,0.8448,50
+rf,42,EuroSAT,thai-L2A,grassland removed,thai-L2A_nograss,clean-wc,water,1.0,0.92,0.9583,50
