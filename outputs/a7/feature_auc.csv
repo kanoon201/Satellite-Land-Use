@@ -1,0 +1,7 @@
+,AUC,AUC,AUC,AUC,AUC,wrong patches have,wrong patches have,wrong patches have,wrong patches have,wrong patches have
+feature,B11,B12,B4,B8,NDVI,B11,B12,B4,B8,NDVI
+mistake,,,,,,,,,,
+crop -> built-up,0.575,0.567,0.552,0.556,0.552,lower,lower,lower,higher,higher
+crop -> grassland,0.612,0.62,0.595,0.59,0.584,lower,lower,lower,higher,higher
+forest -> crop,0.987,0.997,0.995,0.662,0.941,higher,higher,higher,lower,lower
+forest -> grassland,0.949,0.967,0.96,0.576,0.881,higher,higher,higher,lower,lower

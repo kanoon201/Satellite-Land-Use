@@ -1,0 +1,15 @@
+run,macro-F1 (b) vote,macro-F1 (c) WorldCover,difference (b) - (c),95% interval low,95% interval high
+"ResNet-18, L1C, —",0.8306,0.8246,0.0059,-0.0011,0.0196
+"ResNet-18, L1C, AdaBN",0.8735,0.8791,-0.0055,-0.018,0.0023
+"ResNet-18, L1C, AdaBN + grassland removed",0.9335,0.9541,-0.0206,-0.0439,-0.0048
+"ResNet-18, L1C, grassland removed",0.8939,0.8936,0.0002,-0.0151,0.0159
+"ResNet-18, L1C, Thai normalisation",0.81,0.8097,0.0003,-0.0023,0.0038
+"ResNet-18, L1C, Thai normalisation + grassland removed",0.9029,0.9077,-0.0049,-0.0172,0.0019
+"ResNet-18, L2A, —",0.3714,0.3717,-0.0003,-0.0032,0.002
+"ResNet-18, L2A, B9 set to EuroSAT mean",0.5056,0.5092,-0.0036,-0.0114,0.0034
+"ResNet-18, L2A, B9 set to EuroSAT mean + grassland removed",0.666,0.6604,0.0056,-0.0051,0.0181
+"ResNet-18, L2A, grassland removed",0.7764,0.7674,0.009,-0.0083,0.0283
+"Random Forest, L1C, —",0.7818,0.7728,0.0089,-0.0083,0.0279
+"Random Forest, L1C, grassland removed",0.779,0.7701,0.0089,-0.0083,0.0277
+"Random Forest, L2A, —",0.4909,0.4911,-0.0003,-0.0036,0.0021
+"Random Forest, L2A, grassland removed",0.7898,0.795,-0.0052,-0.0169,0.0006

@@ -1,0 +1,10 @@
+label,area,patches,wrong_zero_shot,wrong_adabn,error_rate_zero_shot,error_rate_adabn
+built-up,bangkok,280,0,9,0.0,0.032
+built-up,suphanburi,1,0,0,0.0,0.0
+crop,kanchanaburi,1,0,0,0.0,0.0
+crop,nan,13,9,10,0.692,0.769
+crop,suphanburi,521,169,117,0.324,0.225
+forest,bangkok,5,5,0,1.0,0.0
+forest,kanchanaburi,1088,388,286,0.357,0.263
+forest,nan,683,320,223,0.469,0.327
+water,kanchanaburi,431,0,0,0.0,0.0

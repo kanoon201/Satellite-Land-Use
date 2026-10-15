@@ -1,0 +1,15 @@
+run,macro-F1 (b),95% low,95% high,width
+"ResNet-18, L1C, —",0.831,0.78,0.873,0.093
+"ResNet-18, L1C, AdaBN",0.874,0.829,0.911,0.081
+"ResNet-18, L1C, AdaBN + grassland removed",0.934,0.896,0.965,0.069
+"ResNet-18, L1C, grassland removed",0.894,0.848,0.932,0.084
+"ResNet-18, L1C, Thai normalisation",0.81,0.756,0.855,0.099
+"ResNet-18, L1C, Thai normalisation + grassland removed",0.903,0.861,0.94,0.078
+"ResNet-18, L2A, —",0.371,0.314,0.426,0.112
+"ResNet-18, L2A, B9 set to EuroSAT mean",0.506,0.456,0.549,0.093
+"ResNet-18, L2A, B9 set to EuroSAT mean + grassland removed",0.666,0.627,0.706,0.079
+"ResNet-18, L2A, grassland removed",0.776,0.723,0.827,0.104
+"Random Forest, L1C, —",0.782,0.723,0.833,0.11
+"Random Forest, L1C, grassland removed",0.779,0.72,0.83,0.11
+"Random Forest, L2A, —",0.491,0.43,0.547,0.116
+"Random Forest, L2A, grassland removed",0.79,0.731,0.844,0.112

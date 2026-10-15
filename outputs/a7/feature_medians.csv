@@ -1,0 +1,20 @@
+group,patches,NDVI,B4,B8,B11,B12
+"Thai crop kanchanaburi, predicted crop",1,0.242,1202.153,1995.078,2630.924,1732.263
+"Thai crop nan, predicted crop",4,0.356,1234.716,2458.093,2645.649,1652.032
+"Thai crop nan, predicted grassland",9,0.305,1097.032,2133.362,1794.408,1013.213
+"Thai crop suphanburi, predicted built-up",43,0.492,788.947,2587.69,1669.182,802.312
+"Thai crop suphanburi, predicted crop",352,0.443,895.548,2484.531,1816.525,956.912
+"Thai crop suphanburi, predicted forest",1,0.645,682.292,3190.137,1622.468,723.615
+"Thai crop suphanburi, predicted grassland",123,0.534,762.839,2611.479,1628.77,769.191
+"Thai forest kanchanaburi, predicted crop",48,0.343,1004.879,2058.842,2079.467,1160.836
+"Thai forest kanchanaburi, predicted forest",700,0.585,602.087,2341.479,1581.15,690.967
+"Thai forest kanchanaburi, predicted grassland",340,0.433,864.687,2191.856,1890.547,947.532
+"Thai forest nan, predicted built-up",1,0.444,782.467,2049.196,1825.886,953.559
+"Thai forest nan, predicted crop",41,0.471,807.041,2237.233,2014.072,1019.593
+"Thai forest nan, predicted forest",363,0.529,659.419,2152.872,1578.089,702.603
+"Thai forest nan, predicted grassland",277,0.498,765.725,2248.446,1915.934,909.935
+EuroSAT AnnualCrop,400,0.341,1355.775,3090.435,2625.708,1685.126
+EuroSAT Forest,400,0.724,407.169,2633.999,1371.839,540.49
+EuroSAT HerbaceousVegetation,400,0.378,951.041,2307.304,2362.61,1366.841
+EuroSAT Pasture,400,0.667,636.448,3361.485,1958.147,921.505
+EuroSAT PermanentCrop,400,0.342,1315.986,2762.151,2689.916,1790.08

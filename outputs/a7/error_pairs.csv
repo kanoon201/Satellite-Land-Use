@@ -1,0 +1,10 @@
+true class,predicted,zero-shot,AdaBN,"zero-shot, share of errors"
+forest,grassland,618,484,0.694
+crop,grassland,132,59,0.148
+forest,crop,93,10,0.104
+crop,built-up,43,14,0.048
+crop,water,2,22,0.002
+forest,built-up,1,1,0.001
+crop,forest,1,32,0.001
+forest,water,1,14,0.001
+built-up,water,0,9,0.0
